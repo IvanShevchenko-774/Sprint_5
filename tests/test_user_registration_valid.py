@@ -6,6 +6,8 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from locators import *
 from helpers import generate_unique_email, generate_unique_pass
+from constant import *
+
 
 
 class TestRegistration:

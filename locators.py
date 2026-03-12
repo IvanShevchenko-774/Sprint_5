@@ -1,7 +1,9 @@
 from selenium.webdriver.common.by import By
 
-# Базовый URL
-URL = 'https://qa-desk.stand.praktikum-services.ru'
+
+
+
+
 
 LOGIN_AND_SIGNUP_BUTTON = (By.XPATH, "//button[contains(text(), 'Вход и регистрация')]")
 EMAIL_FIELD = (By.NAME, "email")
@@ -13,7 +15,7 @@ NO_ACCOUNT_BUTTON = (By.XPATH, "//button[contains(text(), 'Нет аккаунт
 CREATE_ACCOUNT_BUTTON = (By.XPATH, "//button[text()='Создать аккаунт']")
 EMAIL_ERROR = (By.XPATH, "//span[contains(@class, 'input_span__') and text()='Ошибка']")
 CREATE_AD_BUTTON = (By.XPATH, "//button[contains(@class, 'buttonPrimary') and text()='Разместить объявление']")
-AUTH_MODAL_TITLE = (By.XPATH, "//h1[contains(@class, 'h1')]")
+AUTH_MODAL_TITLE = (By.XPATH, "//h1[text() = 'Чтобы разместить объявление, авторизуйтесь']") 
 LOGOUT_BUTTON = (By.CSS_SELECTOR, "button.btnSmall.spanGlobal[type='button']")
 AD_ARROW_BUTTON_RIGHT = (By.CSS_SELECTOR, ".arrowButton--right:not([disabled])")
 AD_CATEGORY_ARROW = (By.XPATH, "//input[@name='category']/following-sibling::button")
@@ -31,4 +33,3 @@ AD_PUBLISH_BUTTON = (By.XPATH, "//button[contains(., 'Опубликовать')
 AD_TITLE_FIELD = (By.NAME, "name")
 AD_DESCRIPTION_FIELD = (By.CLASS_NAME, "textarea_inputStandart__IoNxq.spanGlobal")
 AD_PRICE_FIELD = (By.NAME, "price")
-
